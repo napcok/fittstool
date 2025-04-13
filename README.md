@@ -49,8 +49,10 @@ LeftButton=xterm -C alsamixer
 ```
 
 
-# Available positions: Left, TopLeft, etc, TopCenter, BottomCenter, Right, TopRight, BottomRight, etc...
-# Available events: LeftButton, RightButton, MiddleButton, WheelUp, WheelDown, WheelUpOnce, WheelDownOnce, Enter, Leave 
+# Available positions:
+Left, TopLeft, etc, TopCenter, BottomCenter, Right, TopRight, BottomRight, etc...
+# Available events:
+LeftButton, RightButton, MiddleButton, WheelUp, WheelDown, WheelUpOnce, WheelDownOnce, Enter, Leave 
 
 I think it's simple enough for you to get it. For example you want to bind the lower right corner to launch the htop process manager for you. All you have to do is add this at the bottom of your fittstoolrc:
 
