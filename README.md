@@ -38,7 +38,7 @@ which correspond to events on that screen corner and point to the command/script
 Here's how the example config file looks:
 
 # fittstoolrc example
-#volume control in the top right corner:
+### volume control in the top right corner:
 
 ```
 [TopRight]
