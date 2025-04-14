@@ -58,7 +58,7 @@ struct str_window_options {
   int y;
   int h;
   int w;
-  char commands[9][100];
+  char commands[9][200];
   xcb_window_t xcb_window; /* pointer to the newly created window.      */
   time_t last_time_up; /* last time a wheel event on a corner has been made */
   time_t last_time_down; /* last time a wheel event on a corner has been made */
