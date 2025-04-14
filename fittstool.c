@@ -91,7 +91,7 @@ server_create_windows(xcb_connection_t *connection, xcb_screen_t *screen)
         
     /* InputOnly window to get the focus when no other window can get it */
     printf("Created a window - x:%d y:%d width:%d height:%d \n"
-      ,window_options[i].x,window_options[i].y,window_options[i].h,window_options[i].w);
+      ,window_options[i].x,window_options[i].y,window_options[i].w,window_options[i].h);
     xcb_create_window (connection, 0, window_options[i].xcb_window, screen->root, window_options[i].x,
           window_options[i].y, window_options[i].w, window_options[i].h, 0,
           XCB_WINDOW_CLASS_INPUT_ONLY, screen->root_visual,
