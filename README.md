@@ -1,9 +1,15 @@
 This is a clone of the project [fittstool from google code](https://code.google.com/p/fittstool/). I made it because the project has been archived and I found no other source of it.
 
-# DEPENDENCIES
+# fittstool
+A tool for binding mouse button events at the screen corners in X to commands.
+
+According to [Fitt's Law](https://en.wikipedia.org/wiki/Fitts%27s_law)
+
+
+## DEPENDENCIES
 xcb, glib
 
-# INSTALL
+## INSTALL
 
 type "make"
 as root type "make install"
@@ -12,7 +18,7 @@ as root type "make install"
 execute "fittstool"
 ```
 
-# Usage
+## Usage
 
 
 fittstool uses a config file which is usually located at ~/.config/fittstool/fittstoolrc
@@ -37,7 +43,7 @@ which correspond to events on that screen corner and point to the command/script
 
 Here's how the example config file looks:
 
-# fittstoolrc example
+## fittstoolrc example
 ### volume control in the top right corner:
 
 ```
@@ -54,6 +60,7 @@ Left, TopLeft, etc, TopCenter, BottomCenter, Right, TopRight, BottomRight, etc..
 ## Available events:
 LeftButton, RightButton, MiddleButton, WheelUp, WheelDown, WheelUpOnce, WheelDownOnce, Enter, Leave 
 
+---
 I think it's simple enough for you to get it. For example you want to bind the lower right corner to launch the htop process manager for you. All you have to do is add this at the bottom of your fittstoolrc:
 
 ```
